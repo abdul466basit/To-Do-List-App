@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BooK List </title>
+    <script src="https://kit.fontawesome.com/9b91d7ac7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./yeti.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4">
+            <i class="fa-solid fa-book "></i> My
+            <span class="text-primary">Book</span>List
+        </h1>
+        <!-- HERE THE DIV WILL BE INSERTED BY JS -->
+        
+        <form id="book-form">
+            <div class="form-group mt-3">
+                <label for="title"> Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label for="author"> Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label for="isbn"> ISBN#</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block mt-3">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
